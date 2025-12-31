@@ -1,0 +1,16 @@
+<scene version="3.0.0">
+    <integrator type="stokes">
+        <integrator type='path'>
+            <integer name="max_depth" value="1"/>
+        </integrator>
+    </integrator>
+
+    <sensor type="perspective">
+        <sampler type="independent">
+            <integer name="sample_count" value="1"/>
+        </sampler>
+        <film type="specfilm">
+            <spectrum name="mono" value="400:0.5, 700:0.5"/>
+		</film>
+    </sensor>
+</scene>
